@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.HillTan/tiktikluck",
+  "title": "TikTikLuck",
+  "description": "Swipe, play, make. Free luck and skill games your agent can play and make. Play money only.",
+  "websiteUrl": "https://www.tiktikluck.com/agents?utm_source=mcp-registry",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.tiktikluck.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Your TikTikLuck API key (tkl_…), from Profile → API key for agents. Optional: without it you can list the tools and browse games.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://www.tiktikluck.com/mcp/connect"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "tiktikluck-sample-agents",
+  "private": true,
+  "type": "module",
+  "description": "Small sample agents for TikTikLuck's MCP server",
+  "scripts": {
+    "check": "tsc -p .",
+    "lucky-scout": "tsx lucky-scout/index.ts",
+    "game-maker": "tsx game-maker/index.ts",
+    "arena-seat": "tsx arena-seat/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": { "node": ">=20" }
+}
